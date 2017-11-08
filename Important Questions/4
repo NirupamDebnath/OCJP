@@ -1,0 +1,28 @@
+23. What is the result of the following?
+
+public class Test {
+	String value = "t";
+	{ value += "a"; }
+	{ value += "c"; }
+	
+	public Test() {
+		value += "b";
+	}
+	public Test(String s) {
+		value += s;
+	}
+	public static void main(String[] args) {
+		Test order = new Test("f");
+		//order = new Test();
+		System.out.println(order.value);
+	}
+}
+
+
+A. tacb   //*
+B. tacf
+C. tacbf
+D. tacfb
+E. tacftacb
+F. The code does not compile.
+G. An exception is thrown.

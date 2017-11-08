@@ -1,0 +1,25 @@
+22. What is the result of the following?
+public class Order {
+static String result = "";
+{ result += "c"; }
+static
+{ result += "u"; }
+{ result += "r"; }
+}
+public class OrderDriver {
+public static void main(String[] args) {
+System.out.print(Order.result + " ");
+System.out.print(Order.result + " ");
+new Order();
+new Order();
+System.out.print(Order.result + " ");
+}
+}
+
+A. curur
+B. ucrcr
+C. u ucrcr
+D. u u curcur
+E. u u ucrcr  //(ans.)
+F. ur ur urc
+G. The code does not compile.
